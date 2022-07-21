@@ -1,3 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap');
+
 .App {
   text-align: center;
+}
+
+body {
+  background-image: url(/src/images/starry-sky-2675322_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: fadein 2s; /* Padrão */
+  color: white;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+@keyframes fadein {
+  from { opacity: 0.3; }
+  to { opacity: 1; } /* Padrão */
+  }
+
+.header-div {
+  display: flex;
+  justify-content: center;
+  font-size: 65px;
+  margin: 150px;
+  transition: 500ms;
+}
+
+.header-div:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.solar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 6px solid rgba(255, 255, 255, 0.575);
+  padding: 30px;
+}
+
+.planet-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30px;
+  padding: 70px;
+  font-size: 20px;
+}
+
+.img-planet {
+  height: 100px;
+  margin-top: 15px;
+  transition: 500ms;
+}
+
+.img-planet:hover {
+  -webkit-transform: scale(2.0);
+  -ms-transform: scale(2.0);
+  transform: scale(2.0);
+}
+
+.solar h2 {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.missions-div {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.missions-div h2 {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  font-size: 30px;
+  background-color: white;
+  border: 10px solid black;
+  color: black;
+}
+
+.card-mission {
+  border: 3px solid white;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2%;
+  background-color: #2F4550;
+  border-radius: 10px;
+}
+
+.mission-locage {
+  width: 80%;
+  background-color: white;
+  color: #2F4550;
+  text-align: center;
+  font-weight: bolder;
 }
